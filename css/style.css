@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +9,70 @@
 /*Hela body*/
 
 body {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 1rem;
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+p,
+h2,
+ul,
+ol,
+blockquote,
+figcaption {
+    padding-inline: 1rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* alla p element */
 p {
     line-height: 1.5;
+}
+
+p+p {
+    margin-top: 1rem;
+}
+
+
+img {
+    width: 100%;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.background {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.background h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 35%;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.background p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 65%;
+    background: rgba(255, 255, 255, 0.65);
 }
