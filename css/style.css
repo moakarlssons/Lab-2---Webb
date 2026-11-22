@@ -30,12 +30,23 @@ figcaption {
     padding-inline: 1rem;
 }
 
+/*Alla h2*/
+
 h2 {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+    color: #1d4a66;
+}
+
+/*Första h2*/
+
+.small {
+    font-size: 1.17rem;
+    font-weight: bold;
 }
 
 /* alla p element */
+
 p {
     line-height: 1.5;
 }
@@ -44,17 +55,13 @@ p+p {
     margin-top: 1rem;
 }
 
+/*Alla bilder*/
 
 img {
     width: 100%;
 }
 
-blockquote {
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: bold;
-    margin: 10px;
-}
+/*Hero bilden*/
 
 .background {
     position: relative;
@@ -67,6 +74,8 @@ blockquote {
     text-align: center;
     bottom: 35%;
     background: rgba(255, 255, 255, 0.65);
+    color: #0b2b3f;
+    font-size: 2.5rem;
 }
 
 .background p {
@@ -75,4 +84,81 @@ blockquote {
     text-align: center;
     top: 65%;
     background: rgba(255, 255, 255, 0.65);
+    color: #0b2b3f;
+    font-size: 1.1rem;
+}
+
+/*Box*/
+
+.text-box {
+    background-color: #1d4a66;
+    color: whitesmoke;
+    padding-bottom: 35px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text-box h2 {
+    color: whitesmoke;
+}
+
+/*Blockquote*/
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px;
+    color: #1d4a66;
+}
+
+/*Profil bild*/
+
+.profile-picture {
+    margin-top: 30px;
+}
+
+/*Ul lista*/
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding-inline: 20px;
+    margin: 20px 0;
+}
+
+.tags li {
+    background-color: #1d4a66;
+    color: whitesmoke;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        width: 80%;
+        min-width: 45ch;
+        max-width: 75ch;
+        margin: 0 auto;
+    }
+
+    .tags {
+        justify-content: flex-start;
+    }
+
+    img {
+        padding-inline: 20px;
+    }
+
+    .text-box {
+        margin-inline: 20px;
+    }
 }
